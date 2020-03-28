@@ -7,6 +7,11 @@ import { Grid } from '@material-ui/core'
 import youtube from './api/youtube'
 
 class App extends React.Component {
+  state = {
+    videos: [],
+    selectedVideo: null
+  }
+
   handleSubmit = async searchTerm => {
     const res = await youtube.get('search', {
       params: {
