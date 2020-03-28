@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { SearchBar } from './components/SearchBar'
-import { VideoList } from './components/VideoList'
-import { VideoDetail } from './components/VideoDetail'
+import { SearchBar, VideoDetail } from './components'
 
 import { Grid } from '@material-ui/core'
 
@@ -15,10 +13,10 @@ class App extends React.Component {
         <Grid item xs={11}>
           <Grid container spacing={16}>
             <Grid item xs={12}>
-              {/* {SEARCH BAR} */}
+              <SearchBar />
             </Grid>
             <Grid item xs={8}>
-              {/* {VIDEO DETAILS} */}
+              <VideoDetail />
             </Grid>
             <Grid item xs={4}>
               {/* {VIDEO LIST} */}
