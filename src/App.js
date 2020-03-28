@@ -22,7 +22,7 @@ class App extends React.Component {
       }
     })
 
-    console.log(res)
+    this.setState({ videos: res.data.item, selectedVideo: res.data.items[0] })
   }
 
   render() {
