@@ -11,6 +11,13 @@ class SearchBar extends Component {
     this.setState({ searchTerm: event.target.value })
   }
 
+  handleSubmit = () => {
+    const { searchTerm } = this.state
+    const { onFormSubmit } = this.props
+
+    onFormSubmit(searchTerm)
+  }
+
   render() {
     return (
       <Paper elevation={6} style={{ padding: '25px' }}>
