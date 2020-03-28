@@ -7,6 +7,10 @@ class SearchBar extends Component {
     searchTerm: ''
   }
 
+  handleChange = event => {
+    this.setState({ searchTerm: event.target.value })
+  }
+
   render() {
     return (
       <Paper elevation={6} style={{ padding: '25px' }}>
