@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class VideoDetails extends Component {
-  render() {
-    return <h1>VideoDetails component</h1>
-  }
+const VideoDetails = () => {
+  return <h1>VideoDetails component</h1>
 }
 
 export default VideoDetails
