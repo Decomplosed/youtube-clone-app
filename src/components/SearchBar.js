@@ -8,7 +8,13 @@ class SearchBar extends Component {
   }
 
   render() {
-    return <h1>this is a search bar component</h1>
+    return (
+      <Paper elevation={6} style={{ padding: '25px' }}>
+        <form onSubmit={this.handleSubmit}>
+          <TextField fullWidth label='Search...' onChange={this.handleChange} />
+        </form>
+      </Paper>
+    )
   }
 }
 
