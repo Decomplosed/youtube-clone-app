@@ -1,5 +1,9 @@
 import React from 'react'
 
+import { SearchBar } from './components/SearchBar'
+import { VideoList } from './components/VideoList'
+import { VideoDetail } from './components/VideoDetail'
+
 import { Grid } from '@material-ui/core'
 
 import youtube from './api/youtube'
