@@ -3,6 +3,8 @@ import React from 'react'
 import { Paper, Typography } from '@material-ui/core'
 
 const VideoDetail = ({ video }) => {
+  if (!video) return <div>Loading...</div>
+
   return (
     <React.Fragment>
       <Paper elevation={6} style={{ height: '70%' }}>
