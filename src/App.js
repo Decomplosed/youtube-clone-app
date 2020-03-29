@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SearchBar, VideoDetail } from './components'
+import { SearchBar, VideoDetail, VideoList } from './components'
 
 import { Grid } from '@material-ui/core'
 
