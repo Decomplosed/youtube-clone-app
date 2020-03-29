@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { selectedVideo } = this.state
+    const { selectedVideo, videos } = this.state
 
     return (
       <Grid container justify='center' spacing={10}>
