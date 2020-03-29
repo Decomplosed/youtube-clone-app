@@ -15,7 +15,7 @@ const VideoDetail = ({ video }) => {
           height='100%'
           width='100%'
           title='Video Player'
-          src=''
+          src={videoSrc}
         />
       </Paper>
       <Paper elevation={6} style={{ padding: '15px' }}></Paper>
