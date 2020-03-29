@@ -4,9 +4,9 @@ import VideoItem from './VideoItem'
 import { Grid } from '@material-ui/core'
 
 const VideoList = ({ videos }) => {
-  const listOfVideos = videos.map(video => {})
+  const listOfVideos = videos.map((video, id) => <VideoItem key={id} />)
 
-  return <h1>VideoList</h1>
+  return listOfVideos
 }
 
 export default VideoList
